@@ -7,19 +7,17 @@
     <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" href="./stylesheet.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 
-    
     <title>Express-O</title>
 </head>
 <body>
     <!------------------------------------- Header starts ------------------------------------->
    
     <header>
-        <a href="#" class="logo">Express-o</a>
-
-        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="./landing.html" class="brand-name">Express-o</a>
 
         <nav class="navbar">
             <a href="#home">Home</a>
@@ -28,9 +26,6 @@
             <a href="#confess">Confess</a>
             <a href="#contact">Contact Us</a>
         </nav>
-
-        <div id="close-menu"><i class="fa fa-times"></i></div>
-
     </header>
 
     <!-------------------------------------- Header ends -------------------------------------->
@@ -42,6 +37,7 @@
         <div class="content">
             <h3>EXPRESS-O</h3> 
             <p>Express. Impress. Confess.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.house.expresso"><img src="" alt="Get Express-O on Play Store."></a>
         </div>
 
         <div class="swiper mySwiper image-slider"> 
@@ -57,30 +53,67 @@
 
     <!----------------------------------- Home section ends ----------------------------------->
 
+    <section class="emotions" id="emotions">
+
     <!------------------------------------- Express starts ------------------------------------>
 
-     
+    <section class="express" id="express">
+        <div class="express-container">
+            <div class="img-container">
+                <img src="./images/Express image only.png" alt="Express Emotion Image">
+            </div>
+            <div class="text-container">
+                <h1>Express</h1>
+                <p>your heart, be yourself</p> 
+            </div>
+        </div>
+    </section>
 
     <!-------------------------------------- Express ends ------------------------------------->
 
     <!------------------------------------- Impress starts ------------------------------------>
 
+    <section class="impress" id="impress">
+        <div class="impress-container">
+            <div class="text-container">
+                <h1>Impress</h1>
+                <p>Show your fun and creative side</p>
+            </div>
+            <div class="img-container">
+                <img src="./images/Impress image only.png" alt="Impress Emotion Image">
+            </div>
+        </div>
+    </section>
     
-
     <!-------------------------------------- Impress ends ------------------------------------->
 
     <!------------------------------------- Confess starts ------------------------------------>
 
-
+    <section class="confess" id="confess">
+        <div class="confess-container">
+            <div class="img-container">
+                <img src="./images/Confess image only.png" alt="Confess Emotion Image">
+            </div>
+            <div class="text-container">
+                <h1>Confess</h1>
+                <p>Chat secretly with that cutie</p>
+            </div>
+        </div>
+    </section>
 
     <!-------------------------------------- Confess ends ------------------------------------->
+    
+    </section>
+    
+    <!------------------------------------- Contact starts ------------------------------------->
+
+    <!-------------------------------------- Contact ends -------------------------------------->
 
     <!------------------------------------- Script starts ------------------------------------->
     
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     
     <script>
-
         var swiper = new Swiper(".image-slider", {
             effect: "coverflow",
             grabCursor: true,
