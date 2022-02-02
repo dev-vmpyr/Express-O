@@ -2,10 +2,7 @@
 
 :root{
     --nav-height: 20px;
-    --black:#272D3B;
-    --red:#ED176F;
-    --coral:#F7817F;
-    --gradiant:linear-gradiant(90deg, var(--red), var(--coral));
+    --try1:#594740;
 } 
 
 *{
@@ -37,7 +34,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background: var(--black);
+    background: var(--try1);
     z-index: 1000;
     padding: 2rem 5%;
     border-bottom: .1rem solid #fff3;
@@ -52,20 +49,19 @@ header .brand-name {
     font-size: 2.5rem;
 }
 
-header .navbar a{
+header .navbar a {
     font-size: 2rem;
     margin-left: 2.5rem;
     color: #fff ;
 }
 
-header .navbar a:hover{
-    color: rgb(160, 120, 120);
+header .brand-name p:hover,
+header .navbar a:hover {
+    color: #29201b;
 }
 
-.home{
-    background: url(./images/conc\ 3.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+.home {
+    background: radial-gradient( #b69f91, #755e56);
     min-height: 100vh;
     text-align: center;
     padding: 3rem 9%;
@@ -114,10 +110,30 @@ header .navbar a:hover{
     height: 5rem;
 }
 
-.express,
-.impress,
+.express {
+    background-color: #fb7b50;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.impress {
+    background-color: #5e92ff;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .confess {
-    background-color: var(--coral);
+    background-color: #f45f58;
 
     height: 100vh;
     width: 100vw;
@@ -128,13 +144,33 @@ header .navbar a:hover{
 }
 
 
-.express-container,
-.impress-container,
+.express-container {
+    height: 90%;
+    width: 90%;
+
+    background-color: #fbae82;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.impress-container {
+    height: 90%;
+    width: 90%;
+
+    background-color: #87b7ff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .confess-container {
     height: 90%;
     width: 90%;
 
-    background-color: var(--red);
+    background-color: #fb9893;
 
     display: flex;
     flex-direction: row;
@@ -174,6 +210,85 @@ header .navbar a:hover{
 .img-container img {
     height: 700px;
     width: 100%;
+}
+
+.contact {
+    height: 100vh;
+    width: 100vw;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient( #b69f91, #755e56);
+}
+
+.contact .contactForm h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #333;
+}
+
+.contactForm {
+    height: 400px;
+    width: 500px;
+
+    padding: 40px;
+    background-color: #fff;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+}
+
+.contactForm .contact-inputBox {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.contactForm .contact-inputBox input,
+.contactForm .contact-inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .contact-inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .contact-inputBox input:focus ~ span,
+.contactForm .contact-inputBox input:valid ~ span,
+.contactForm .contact-inputBox textarea:focus ~ span,
+.contactForm .contact-inputBox textarea:valid ~ span {
+    color: #666;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .contact-inputBox input[type="submit"] {
+    width: 100px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
 }
 
 /*********************************************** Media Queries *************************************************/
