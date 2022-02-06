@@ -157,7 +157,7 @@ header .download:hover:before {
 }
 
 .impress {
-    background-color: #5e92ff;
+    background-color: #87b7ff;
 
     height: 100vh;
     width: 100vw;
@@ -194,7 +194,7 @@ header .download:hover:before {
     height: 90%;
     width: 90%;
 
-    background-color: #87b7ff;
+    background-color: #cee0fc;
 
     display: flex;
     flex-direction: row;
