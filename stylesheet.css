@@ -168,7 +168,7 @@ header .download:hover:before {
 }
 
 .confess {
-    background-color: #f45f58;
+    background-color: #fb9893;
 
     height: 100vh;
     width: 100vw;
@@ -205,7 +205,7 @@ header .download:hover:before {
     height: 90%;
     width: 90%;
 
-    background-color: #fb9893;
+    background-color: #fad3d1;
 
     display: flex;
     flex-direction: row;
