@@ -288,11 +288,52 @@ header .download-button:hover:before {
 }
 
 footer {
-    height: 100px;
+    height: 20.2rem;
     font-size: 14px;
     color: #fff;
     background-color: var(--try1);
 
+    align-items: center;
+}
+
+footer .upper-footer {
+    height: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .upper-footer h4 {
+    padding-bottom: 1rem;
+}
+
+footer .upper-footer .mail {
+    text-decoration: underline;
+    text-transform: lowercase;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .upper-footer .mail a{
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .line {
+    width: 80%;
+    margin-left: 10%;
+
+    border-bottom: 2px solid #fff;
+    display: block;
+}
+
+footer .lower-footer {
+    height: 10rem;
     list-style-type: none;
 
     display: flex;
@@ -300,58 +341,56 @@ footer {
     justify-content: space-between;
 }
 
-footer .copyright-text,
-footer .policies,
-footer .copyright-creator {
+footer .lower-footer .copyright-text,
+footer .lower-footer .policies,
+footer .lower-footer .copyright-creator {
     height: inherit;
     vertical-align: inherit;
 }
 
-footer .copyright-text {
+footer .lower-footer .copyright-text {
     cursor: pointer;
 }
 
-footer .copyright-text p:hover {
+footer .lower-footer .copyright-text p:hover {
     color: var(--hover);
 }
 
-footer .policies {
+footer .lower-footer .policies {
     display: flex;
     flex-direction: row;
 }
 
-footer .policies a {
+footer .lower-footer .policies a {
     color: #fff;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-footer .policies a:hover {
+footer .lower-footer .policies a:hover {
     color: var(--hover);
 }
 
-footer .copyright-creator a {
+footer .lower-footer .copyright-creator a {
     color: #fff;
 }
 
-footer .copyright-creator a:hover {
+footer .lower-footer .copyright-creator a:hover {
     color: var(--hover);
 }
 
-footer .copyright-text,
-footer .policies {
-    padding-top: 43px;
-    padding-bottom: 43px;
+footer .lower-footer .copyright-text,
+footer .lower-footer .policies {
+    padding-top: 4rem;
 }
 
-footer .copyright-text {
-    padding-left: 20px;
+footer .lower-footer .copyright-text {
+    margin-left: 2rem;
 }
 
-footer .copyright-creator {
-    padding-right: 20px;
-    padding-top: 38px;
-    padding-bottom: 38px;
+footer .lower-footer .copyright-creator {
+    margin-right: 2rem;
+    padding-top: 3rem;
 }
 
 /*********************************************** Media Queries *************************************************/
