@@ -51,7 +51,7 @@ header img {
     width: 5rem;
 }
 
-header .download {
+header .download-button {
     width: 15rem;
     height: 4rem;
     border: none;
@@ -66,13 +66,13 @@ header .download {
     z-index: 1;
 }
 
-header .download:hover {
+header .download-button:hover {
     color: #fff;
     cursor: pointer;
 
 }
 
-header .download:before {
+header .download-button:before {
     transition: 0.5s all ease;
     position: absolute;
     top: 0;
@@ -84,7 +84,7 @@ header .download:before {
     background-color: #bf826e;
 }
 
-header .download:hover:before {
+header .download-button:hover:before {
     transition: 0.3s all ease;
     left: 0;
     right: 0;
@@ -247,7 +247,7 @@ header .download:hover:before {
     width: 100%;
 }
 
-.contact {
+.download {
     height: 100vh;
     width: 100vw;
 
@@ -255,75 +255,36 @@ header .download:hover:before {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient( #b69f91, #755e56);
+    background: radial-gradient( #e2cec2, #755f58);
 }
 
-.contact .contactForm h2 {
-    font-size: 36px;
-    font-weight: 500;
-    color: #333;
+.download .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.contactForm {
-    height: 400px;
-    width: 500px;
-
-    padding: 40px;
-    background-color: #fff;
+.download .container img {
+    height: 20rem;
+    width: 50rem;
 }
 
-.contactForm h2 {
-    font-size: 30px;
-    font-weight: 500;
-    color: #333;
+.download .container .download-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.contactForm .contact-inputBox {
-    position: relative;
-    margin-top: 10px;
-    width: 100%;
+.download .container .download-links .playstore-btn img {
+    height: 5rem;
+    width: 15rem;
+    border-radius: 15px;
 }
 
-.contactForm .contact-inputBox input,
-.contactForm .contact-inputBox textarea {
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #333;
-    outline: none;
-    resize: none;
-}
-
-.contactForm .contact-inputBox span {
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #666;
-}
-
-.contactForm .contact-inputBox input:focus ~ span,
-.contactForm .contact-inputBox input:valid ~ span,
-.contactForm .contact-inputBox textarea:focus ~ span,
-.contactForm .contact-inputBox textarea:valid ~ span {
-    color: #666;
-    font-size: 12px;
-    transform: translateY(-20px);
-}
-
-.contactForm .contact-inputBox input[type="submit"] {
-    width: 100px;
-    background-color: #00bcd4;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
+.download .container .download-links .appstore-btn img {
+    height: 6.5rem;
+    width: 16rem;
 }
 
 footer {
