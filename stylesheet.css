@@ -146,7 +146,7 @@ header .download:hover:before {
 }
 
 .express {
-    background-color: #fb7b50;
+    background-color: #fbae82;
 
     height: 100vh;
     width: 100vw;
@@ -183,7 +183,7 @@ header .download:hover:before {
     height: 90%;
     width: 90%;
 
-    background-color: #fbae82;
+    background-color: #fce7dc;
 
     display: flex;
     flex-direction: row;
